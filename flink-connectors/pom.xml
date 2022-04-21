@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>flink-connector-impala</module>
+        <module>flink-connector-kudu</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

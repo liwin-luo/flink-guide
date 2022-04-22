@@ -1,4 +1,4 @@
-package sink;
+package source;
 
 
 import com.cloudera.impala.jdbc41.DataSource;
@@ -12,11 +12,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 @Slf4j
 public class ImpalaSource extends RichSourceFunction<Fruit> {

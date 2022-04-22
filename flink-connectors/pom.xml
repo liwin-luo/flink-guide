@@ -11,6 +11,7 @@
     <modules>
         <module>flink-connector-impala</module>
         <module>flink-connector-kudu</module>
+        <module>flink-connector-redis</module>
     </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

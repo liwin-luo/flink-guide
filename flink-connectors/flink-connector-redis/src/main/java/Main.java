@@ -1,20 +1,17 @@
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import pojo.Fruit;
-import source.ImpalaSource;
+import source.RedisSource;
 
 /**
- * Impala数据源
- *
  * @author zerocode
  */
 public class Main {
     public static void main(String[] args) throws Exception {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironment();
 
-        DataStreamSource<Fruit> record = env.addSource(new ImpalaSource());
+        DataStreamSource<String> record = env.addSource(new RedisSource());
         record.print().setParallelism(1);
 
-        env.execute("Flink Impala Source");
+        env.execute("Flink Redis Source");
     }
 }

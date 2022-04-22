@@ -10,7 +10,5 @@ LPUSH fruit banann
 LPUSH fruit organge
 ```
 
-![image-20220422234445648](C:\Users\EDZ\AppData\Roaming\Typora\typora-user-images\image-20220422234445648.png)
-
 - Step4: 观察输出结果
 
